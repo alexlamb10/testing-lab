@@ -31,4 +31,20 @@ describe("Math functions", () => {
         expect(subtract(17, 12)).toBe(5)
         expect(subtract(88, 33)).toBe(55)
     })
+
+    test("Testing a math function with a string", () => {
+        expect(add("ten", 2)).toBe('ten2')
+    })
+    //Returns a the string and int added together
+})
+
+describe("Data types", () => {
+    test("What data type for the different math is an integer", () =>{
+        let subtractData = subtract(12,5)
+        expect(typeof subtractData).toEqual('number')
+    })
+
+    test("String data type for greeting", () => {
+        expect(typeof greeting("Alex")).toEqual('string')
+    })
 })
